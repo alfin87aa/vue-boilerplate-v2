@@ -1,0 +1,33 @@
+button:
+  about: About
+  back: Back
+  go: GO
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change languages
+intro:
+  loading: Please Wait ...
+  desc: Opinionated Vue + Vite Starter Template
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  aka: Also known as
+  whats-your-name: What's your name?
+  label: Name
+login:
+  title: Login to Vue account
+  email: Email
+  email_placeholder: Enter your email
+  password: Password
+  password_placeholder: Enter your password
+  keep_me_logged_in: Keep me logged in
+  login: Log in
+  forgot_password: Forgot password?
+  new: New to Vue?
+  register: Get started now
+navbar:
+  home: Home
+  account_settings: Account settings
+  get_help: Get help
+  privacy_policy: Privacy policy
+  logout: Logout
+not-found: Not found

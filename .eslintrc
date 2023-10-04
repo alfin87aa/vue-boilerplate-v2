@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "@antfu"
+  ],
+  "rules": {
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "log"
+        ]
+      }
+    ]
+  }
+}

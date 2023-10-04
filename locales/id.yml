@@ -1,0 +1,33 @@
+button:
+  about: Tentang
+  back: Kembali
+  go: Pergi
+  home: Beranda
+  toggle_dark: Ubah ke mode gelap
+  toggle_langs: Ubah bahasa
+intro:
+  loading: Mohon tunggu ...
+  aka: Juga diketahui sebagai
+  desc: Template awal vite
+  dynamic-route: Contoh rute dinamik
+  hi: Halo, {name}!
+  label: Nama
+  whats-your-name: Siapa nama anda?
+login:
+  title: Masuk ke akun Vue
+  email: Email
+  email_placeholder: Masukkan email anda
+  password: Kata sandi
+  password_placeholder: Masukkan kata sandi anda
+  keep_me_logged_in: Biarkan saya tetap masuk
+  login: Masuk
+  forgot_password: Lupa password?
+  new: Baru di Vue?
+  register: Mulai sekarang
+navbar:
+  home: Beranda
+  account_settings: Pengaturan akun
+  get_help: Dapatkan bantuan
+  privacy_policy: Kebijakan privasi
+  logout: Keluar
+not-found: Tidak ditemukan
