@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Home",
+        "url": "/home",
+        "permission": "home",
+        "icon": "icon-[carbon--home]"
+    },
+    {
+        "name": "Dashboard",
+        "url": "/dashboard",
+        "permission": "dashboard",
+        "icon": "icon-[carbon--home]"
+    },
+    {
+        "name": "Settings",
+        "icon": "icon-[carbon--settings]",
+        "children": [
+            {
+                "name": "Users",
+                "url": "/users",
+                "permission": "users.read"
+            },
+            {
+                "name": "Roles",
+                "url": "/roles",
+                "permission": "roles.read"
+            }
+        ]
+    },
+    {
+        "name": "Settings",
+        "icon": "icon-[carbon--notification]",
+        "children": [
+            {
+                "name": "Users",
+                "url": "/users",
+                "permission": "users.read1"
+            },
+            {
+                "name": "Roles",
+                "url": "/roles",
+                "permission": "roles.read1"
+            }
+        ]
+    }
+]

@@ -62,8 +62,11 @@ export const useUserStore = defineStore('user', () => {
     }).finally(() => {
       endLoading()
     }).catch((err) => {
-      for (const key in err)
-        form.setErrors(err[key])
+      showToast({
+        title: 'Error',
+        message: err.response.data.error,
+        type: 'error',
+      })
     })
   }
 

@@ -8,7 +8,7 @@ const { t } = useI18n()
     <div class="text-4xl icon-[carbon--warning]" />
     <RouterView />
     <div>
-      <TheButton class="text-sm m-3 mt-7 px-4 py-1 text-sm text-teal-600 font-semibold rounded-md border border-teal-200 hover:text-white hover:bg-teal-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2" @click="router.back()">
+      <TheButton class="m-3 mt-7 px-4 py-1 text-sm text-teal-600 font-semibold rounded-md border border-teal-200 hover:text-white hover:bg-teal-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2" @click="router.back()">
         {{ t('button.back') }}
       </TheButton>
     </div>

@@ -1,4 +1,9 @@
 <script setup lang="ts">
+const props = defineProps({
+  isShowLogo: Boolean,
+  isShowMenu: Boolean,
+})
+
 const { t } = useI18n()
 const router = useRouter()
 const user = useUserStore()
@@ -31,7 +36,7 @@ watch(
   <!-- Menu Small Screen End -->
 
   <!-- Navbar Start -->
-  <div class="w-full h-16 text-xs md:text-base bg-light-secondary dark:bg-dark-secondary rounded-lg flex flex-row justify-center px-4 mb-8">
+  <div class="sticky h-16 text-xs m-4 md:text-base bg-light-secondary dark:bg-dark-secondary rounded-lg flex flex-row justify-center px-4 shadow-lg z-50">
     <!-- Left Side Start -->
     <!-- Menu Small Screen -->
     <div class="flex md:hidden text-sm lg:text-base mr-auto">
@@ -40,14 +45,14 @@ watch(
       </div>
     </div>
     <!-- Logo -->
-    <RouterLink to="/" class="w-8 m-auto hidden md:block">
+    <RouterLink v-if="props.isShowLogo" to="/" class="w-8 m-auto hidden md:block">
       <img src="@/assets/logo.svg" alt="logo">
     </RouterLink>
     <!-- Left Side End -->
 
     <!-- Mid Side Start -->
     <div class="hidden md:block flex-grow text-sm lg:text-base">
-      <div class="flex flex-row justify-center items-center h-full gap-1 xl:gap-4">
+      <div v-if="props.isShowMenu" class="flex flex-row justify-center items-center h-full gap-1 xl:gap-4">
         <TheMenu />
       </div>
     </div>
@@ -72,10 +77,10 @@ watch(
        transition-all transform duration-500"
       >
         <div
-          class="block bg-slate-50 dark:bg-slate-700 w-8 h-4 absolute top-6 right-6"
+          class="block bg-slate-50 dark:bg-slate-700 w-8 h-4 absolute top-6 right-6 shadow-xl"
           style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"
         />
-        <div class="bg-slate-50 dark:bg-slate-700 rounded-lg w-96 h-96 flex flex-col">
+        <div class="bg-slate-50 dark:bg-slate-700 rounded-lg w-96 h-96 flex flex-col shadow-lg">
           <div class="flex flex-row justify-between p-4 border-b dark:border-slate-500">
             <h5>Notifications</h5>
             <span class="icon-[carbon--email] text-2xl" />
@@ -133,10 +138,10 @@ watch(
        -right-4"
       >
         <div
-          class="block bg-slate-50 dark:bg-slate-700 w-8 h-4 translate-x-36"
+          class="block bg-slate-50 dark:bg-slate-700 w-8 h-4 translate-x-36 shadow-lg"
           style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"
         />
-        <div class="block bg-slate-50 dark:bg-slate-700 rounded-lg w-48 ">
+        <div class="block bg-slate-50 dark:bg-slate-700 rounded-lg w-48 shadow-lg">
           <RouterLink class="w-full" to="/account-setting">
             <div class="py-2 px-4 hover:bg-slate-200 dark:hover:bg-slate-600 whitespace-no-wrap rounded-t-lg">
               {{ t('navbar.account_settings') }}

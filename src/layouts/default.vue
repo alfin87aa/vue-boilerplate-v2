@@ -3,8 +3,9 @@
 </script>
 
 <template>
-  <main class="bg-light dark:bg-dark h-screen p-4">
-    <TheHorizontalNavbar />
-    <RouterView />
+  <main class="bg-light dark:bg-dark">
+    <TheSidebar>
+      <RouterView />
+    </TheSidebar>
   </main>
 </template>
